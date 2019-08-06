@@ -5,30 +5,75 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap" rel="stylesheet">
+
+  <!-- Style -->
+  <link rel="stylesheet" href="style.css">
+
   <title>PRDev</title>
 </head>
 
 <body>
 
-  <div class="navbar">
-    <a class="link-logo" href="#"><img class="link-logo__img" src="" alt="logo"></a>
+  <header class="navbar">
+    <div class="container">
+      <a class="link-logo" href="#">
+        <!-- <img class="link-logo__img" src="" alt="logo"> -->
+        PRDev
+      </a>
 
-    <nav class="nav-links">
-      <a class="nav-links__link" href="#"><i class="nav-links__icon"></i></a>
-      <a class="nav-links__link" href="#"><i class="nav-links__icon"></i></a>
-      <a class="nav-links__link" href="#"><i class="nav-links__icon"></i></a>
-      <a class="nav-links__link" href="#"><i class="nav-links__icon"></i></a>
-      <a class="nav-links__link" href="#"><i class="nav-links__icon"></i></a>
-    </nav>
+      <nav class="nav-links">
+        <a class="nav-links__link active" href="#">Home</a>
+        <a class="nav-links__link" href="#">Servicios</a>
+        <a class="nav-links__link" href="#">Portafolio</a>
+        <a class="nav-links__link" href="#">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <section id="hero" data-parallax="scroll" data-image-src="./assets/img/hero-bg.jpg">
+    <div class="container hero-content">
+      <h1 class="hero-message">Proveemos soluciones creativas para hacer tus ideas una realidad
+      </h1>
+
+      <a class="btn" href="#">Conoce lo que ofrecemos</a>
+    </div>
 
     <div class="social-links">
-      <a href="#" class="social-links__link"><i class="social-links__icon"></i></a>
-      <a href="#" class="social-links__link"><i class="social-links__icon"></i></a>
-      <a href="#" class="social-links__link"><i class="social-links__icon"></i></a>
-      <a href="#" class="social-links__link"><i class="social-links__icon"></i></a>
+      <a href="#" class="social-links__link">
+        <div class="social-links__logo-container">
+          <img class="social-links__icon" src="./assets/icons/instagram.png"></img>
+        </div>
+      </a>
+      <a href="#" class="social-links__link">
+        <div class="social-links__logo-container">
+          <img class="social-links__icon" src="./assets/icons/facebook.png"></img>
+        </div>
+      </a>
+      <a href="#" class="social-links__link">
+        <div class="social-links__logo-container">
+          <img class="social-links__icon" src="./assets/icons/twitter.png"></img>
+        </div>
+      </a>
+      <a href="#" class="social-links__link">
+        <div class="social-links__logo-container">
+          <img class="social-links__icon" src="./assets/icons/whatsapp.png"></img>
+        </div>
+      </a>
+      <a href="#" class="social-links__link">
+        <div class="social-links__logo-container">
+          <img class="social-links__icon" src="./assets/icons/email.png"></img>
+        </div>
+      </a>
     </div>
-  </div>
+  </section>
 
+
+  <!-- Libs -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
 </body>
 
 </html>
