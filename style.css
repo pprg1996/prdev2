@@ -5,6 +5,7 @@
 
 body {
   font-family: "Montserrat";
+  min-height: 500vh;
 }
 
 img {
@@ -18,7 +19,7 @@ a {
 }
 
 .container {
-  width: 89%;
+  width: 90%;
   max-width: 1200px;
   margin: auto;
 }
