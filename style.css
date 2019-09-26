@@ -144,13 +144,16 @@ header .container {
 .top-info-copy {
   color: #333333;
   width: 65%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .top-info-header {
   font-size: 48px;
   font-weight: 500;
   position: relative;
-  display: inline-block;
   margin-bottom: 75px;
 }
 
