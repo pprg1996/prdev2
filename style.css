@@ -183,6 +183,7 @@ header .container {
   flex-wrap: wrap;
   justify-content: center;
   align-content: center;
+  margin-bottom: 30px;
 }
 
 .card {
@@ -233,4 +234,25 @@ header .container {
   line-height: 30px;
   letter-spacing: 0.1em;
   font-size: 14px;
+}
+
+.wide-card {
+  flex-direction: row;
+  align-items: center;
+  max-width: 715px;
+  padding: 45px 50px;
+}
+
+.card-icon-header-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 43%;
+  margin-right: 75px;
+  position: relative;
+  top: 20px;
+}
+
+.card-icon-header-container .card-icon-container {
+  height: 76px;
 }
