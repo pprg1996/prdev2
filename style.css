@@ -138,6 +138,7 @@ header .container {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  margin-bottom: 100px;
 }
 
 .top-info-copy {
@@ -172,4 +173,61 @@ header .container {
 
 .top-info-icon-container {
   width: 25%;
+}
+
+.info-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  padding: 40px 28px;
+  background-color: #cc3333;
+  color: white;
+  max-width: 350px;
+  margin: 0 25px;
+  margin-bottom: 60px;
+}
+
+.card-icon-container {
+  /* width: 70px; */
+  height: 60px;
+  margin-bottom: 34px;
+}
+
+.card-icon-container img {
+  width: auto;
+  height: 100%;
+}
+
+.card-title {
+  position: relative;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  margin-bottom: 60px;
+}
+
+.card-title::after {
+  content: "";
+  width: 190px;
+  height: 3px;
+  background-color: white;
+  position: absolute;
+  top: calc(100% + 25px);
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.card-description {
+  text-align: center;
+  line-height: 30px;
+  letter-spacing: 0.1em;
+  font-size: 14px;
 }
