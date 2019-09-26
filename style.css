@@ -6,6 +6,7 @@
 body {
   font-family: "Montserrat";
   min-height: 500vh;
+  overflow-x: hidden;
 }
 
 img {
@@ -80,7 +81,7 @@ header .container {
 
 .btn {
   color: white;
-  border: 2px solid #f26522;
+  border: 2px solid #cc3333;
   padding: 20px 80px 20px 40px;
   font-size: 12px;
   font-weight: 600;
@@ -98,4 +99,77 @@ header .container {
   width: 36px;
   padding: 8px;
   margin-bottom: 16px;
+}
+
+/* Nuestros Servicios -------------------------------------------- */
+
+#servicios {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 90px 0;
+}
+
+.section-header {
+  position: relative;
+  font-size: 48px;
+  font-weight: 500;
+  display: inline-block;
+  margin-bottom: 90px;
+}
+
+.section-header::before {
+  content: "";
+  background-color: #222222;
+  min-width: 10000px;
+  height: 70px;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  left: -20px;
+  z-index: -1;
+}
+
+.section-header--white {
+  color: white;
+}
+
+.desarrollo-web-top-info {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.top-info-copy {
+  color: #333333;
+  width: 65%;
+}
+
+.top-info-header {
+  font-size: 48px;
+  font-weight: 500;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 75px;
+}
+
+.top-info-header::after {
+  position: absolute;
+  content: "";
+  width: 190px;
+  height: 7px;
+  background-color: #cc3333;
+  top: calc(100% + 20px);
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.top-info-txt {
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 0.1em;
+}
+
+.top-info-icon-container {
+  width: 25%;
 }
