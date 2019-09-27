@@ -271,11 +271,17 @@ header .container {
   color: #929292;
 }
 
+.portafolios-container {
+  display: flex;
+  justify-content: center;
+}
+
 .portafolio {
   background-color: #222222;
   padding: 65px;
   border-radius: 10px;
   position: relative;
+  margin: 0 80px;
 }
 
 .portfolio-name {
@@ -292,6 +298,11 @@ header .container {
   transform: translate(0, -50%);
 }
 
+.portfolio-name.diseño {
+  background-color: #cc3333;
+  color: #222222;
+}
+
 .ver-proyectos {
   position: absolute;
   bottom: 0;
@@ -304,4 +315,11 @@ header .container {
   font-size: 12px;
   font-weight: 500;
   cursor: pointer;
+}
+
+.ver-proyectos.diseño {
+  background-color: #222222;
+  color: #929292;
+  border: 2px solid #cc3333;
+  padding: 3px 21px;
 }
