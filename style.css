@@ -114,6 +114,7 @@ header .container {
   font-size: 48px;
   font-weight: 500;
   margin-bottom: 90px;
+  z-index: 2;
 }
 
 .section-header::before {
@@ -253,4 +254,54 @@ header .container {
 
 .card-icon-header-container .card-icon-container {
   height: 76px;
+}
+
+/* Portafolio -------------------------------------------------------- */
+
+#portafolio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #333333;
+  position: relative;
+  padding: 90px 0;
+}
+
+.section-header--gray {
+  color: #929292;
+}
+
+.portafolio {
+  background-color: #222222;
+  padding: 65px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.portfolio-name {
+  background-color: #222222;
+  border-radius: 0 10px 10px 10px;
+  border: 2px solid #cc3333;
+  position: absolute;
+  padding: 8px 18px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #929292;
+  top: 100%;
+  left: 0;
+  transform: translate(0, -50%);
+}
+
+.ver-proyectos {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-radius: 10px 0 10px 0;
+  background-color: #cc3333;
+  color: #222222;
+  border: none;
+  padding: 5px 23px;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
 }
