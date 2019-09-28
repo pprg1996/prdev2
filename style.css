@@ -282,6 +282,12 @@ header .container {
   border-radius: 10px;
   position: relative;
   margin: 0 80px;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+
+.portafolio:hover .ver-proyectos {
+  padding: 10px 30px;
 }
 
 .portfolio-name {
@@ -313,7 +319,7 @@ header .container {
   padding: 5px 23px;
   font-size: 12px;
   font-weight: 500;
-  cursor: pointer;
+  transition: all 0.3s linear;
 }
 
 .ver-proyectos.diseño {
