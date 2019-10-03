@@ -304,7 +304,7 @@ header .container {
   transform: translate(0, -50%);
 }
 
-.portafolio-diseño .portafolio-name {
+.portafolio--diseño .portafolio-name {
   background-color: #cc3333;
   color: #222222;
 }
@@ -322,7 +322,7 @@ header .container {
   transition: all 0.3s linear;
 }
 
-.portafolio-diseño .ver-proyectos {
+.portafolio--diseño .ver-proyectos {
   background-color: #222222;
   color: #929292;
   border: 2px solid #cc3333;
