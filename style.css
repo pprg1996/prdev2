@@ -284,10 +284,34 @@ header .container {
   margin: 0 80px;
   cursor: pointer;
   transition: all 0.3s linear;
+  position: relative;
 }
 
 .portafolio:hover .ver-proyectos {
-  padding: 10px 30px;
+  padding: 7px 30px;
+}
+
+.proyectos {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 10px;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.3s linear;
+  display: flex;
+  scroll-behavior: smooth;
+}
+
+.proyectos--show {
+  opacity: 1;
+}
+
+/* BORRAR: LAS IMAGENES SERAN 1:1 */
+.proyectos img {
+  height: 100%;
 }
 
 .portafolio-name {
@@ -322,9 +346,39 @@ header .container {
   transition: all 0.3s linear;
 }
 
+.ver-proyectos--hide {
+  opacity: 0;
+}
+
 .portafolio--diseño .ver-proyectos {
   background-color: #222222;
   color: #929292;
   border: 2px solid #cc3333;
   padding: 3px 21px;
+}
+
+.arrow-button {
+  display: none;
+  opacity: 0;
+  position: absolute;
+  left: -65px;
+  top: 50%;
+  transform: translate(0, -50%);
+  background: none;
+  outline: none;
+  border: 2px solid #cc3333;
+  padding: 7px;
+  border-radius: 10px 5px 5px 10px;
+  transition: all 0.3s linear;
+}
+
+.arrow-button--show {
+  display: initial;
+  opacity: 1;
+}
+
+.arrow-button--right {
+  right: -65px;
+  left: auto;
+  transform: translate(0, -50%) rotate(180deg);
 }
