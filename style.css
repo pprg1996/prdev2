@@ -345,13 +345,15 @@ header .container {
   align-items: center;
 }
 
-.proyecto-link--pagina {
-  margin-bottom: 6px;
+.proyecto-link {
+  margin-bottom: 5px;
 }
 
 .proyecto-nombre {
+  color: #222222;
+  font-weight: 600;
   position: relative;
-  margin-bottom: 15px;
+  margin-bottom: 12px;
   background-color: #cc3333;
   width: calc(100% + 36px);
   padding: 4px 12px;
