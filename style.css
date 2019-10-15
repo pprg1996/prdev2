@@ -314,7 +314,7 @@ header .container {
   height: 100%;
 }
 
-.portafolio-name {
+.portafolio-descripcion {
   background-color: #222222;
   border-radius: 0 10px 10px 10px;
   border: 2px solid #cc3333;
@@ -328,9 +328,62 @@ header .container {
   transform: translate(0, -50%);
 }
 
-.portafolio--diseño .portafolio-name {
+/* BORRAR */
+.portafolio-nombre {
+  display: none;
+}
+
+.portafolio--diseño .portafolio-nombre {
   background-color: #cc3333;
   color: #222222;
+}
+
+.proyecto-detalles {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.proyecto-link--pagina {
+  margin-bottom: 6px;
+}
+
+.proyecto-nombre {
+  position: relative;
+  margin-bottom: 15px;
+  background-color: #cc3333;
+  width: calc(100% + 36px);
+  padding: 4px 12px;
+}
+
+.proyecto-link {
+  margin-left: 20px;
+  color: #929292;
+}
+
+.proyecto-link:hover {
+  text-decoration: underline;
+}
+
+.proyecto-link--pagina::before {
+  content: "";
+  position: absolute;
+  left: 12px;
+  width: 16px;
+  height: 16px;
+  background-image: url("./assets/icons/world-icon.png");
+  background-size: contain;
+}
+
+.proyecto-link--github::before {
+  content: "";
+  position: absolute;
+  left: 12px;
+  width: 16px;
+  height: 16px;
+  background-image: url("./assets/icons/github-icon.png");
+  background-size: contain;
 }
 
 .ver-proyectos {
