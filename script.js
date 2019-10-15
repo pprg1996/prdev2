@@ -1,8 +1,28 @@
+// TODO
+// - Remover try catch. Asegurar que hayan nulls ni undefineds
+
+function esconderPortafolio() {
+  try {
+    let proyectos = document.querySelector(".proyectos--show");
+    proyectos.classList.remove("proyectos--show");
+
+    let verProyectos = document.querySelector(".ver-proyectos--hide");
+    verProyectos.classList.remove("ver-proyectos--hide");
+
+    let arrowButtons = document.querySelectorAll(".arrow-button--show");
+    arrowButtons.forEach(button => {
+      button.classList.remove("arrow-button--show");
+    });
+  } catch (error) {}
+}
+
 // Mostrar portafolios
 let portafolios = document.querySelectorAll(".portafolio");
 
 portafolios.forEach(portafolio => {
   portafolio.addEventListener("click", () => {
+    esconderPortafolio();
+
     let proyectos = portafolio.querySelector(".proyectos");
     proyectos.classList.add("proyectos--show");
 
@@ -31,18 +51,7 @@ portafolios.forEach(portafolio => {
 
 // Esconder portafolios
 document.addEventListener("click", e => {
-  if (!e.target.closest(".portafolio")) {
-    let proyectos = document.querySelector(".proyectos--show");
-    proyectos.classList.remove("proyectos--show");
-
-    let verProyectos = document.querySelector(".ver-proyectos--hide");
-    verProyectos.classList.remove("ver-proyectos--hide");
-
-    let arrowButtons = document.querySelectorAll(".arrow-button--show");
-    arrowButtons.forEach(button => {
-      button.classList.remove("arrow-button--show");
-    });
-  }
+  if (!e.target.closest(".portafolio")) esconderPortafolio();
 });
 
 // Scrollear imagenes de los portafolios
