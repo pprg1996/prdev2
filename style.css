@@ -319,7 +319,7 @@ header .container {
   border-radius: 0 10px 10px 10px;
   border: 2px solid #cc3333;
   position: absolute;
-  padding: 8px 18px;
+  padding: 8px 0;
   font-size: 14px;
   font-weight: 500;
   color: #929292;
@@ -328,9 +328,15 @@ header .container {
   transform: translate(0, -50%);
 }
 
-/* BORRAR */
 .portafolio-nombre {
-  display: none;
+  text-align: center;
+  margin: 0 18px;
+  max-height: 20px;
+  transition: all 0.3s ease-out;
+}
+
+.portafolio-nombre--hide {
+  max-height: 0;
 }
 
 .portafolio--diseño .portafolio-nombre {
@@ -343,24 +349,26 @@ header .container {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
 }
 
-.proyecto-link {
-  margin-bottom: 5px;
+.proyecto-detalles--show {
+  max-height: 160px;
 }
 
 .proyecto-nombre {
   color: #222222;
   font-weight: 600;
-  position: relative;
   margin-bottom: 12px;
   background-color: #cc3333;
-  width: calc(100% + 36px);
+  width: 100%;
   padding: 4px 12px;
 }
 
 .proyecto-link {
-  margin-left: 20px;
+  margin: 0 18px 5px 38px;
   color: #929292;
 }
 
@@ -376,6 +384,7 @@ header .container {
   height: 16px;
   background-image: url("./assets/icons/world-icon.png");
   background-size: contain;
+  display: none;
 }
 
 .proyecto-link--github::before {
@@ -386,6 +395,11 @@ header .container {
   height: 16px;
   background-image: url("./assets/icons/github-icon.png");
   background-size: contain;
+  display: none;
+}
+
+.proyecto-link--show::before {
+  display: initial;
 }
 
 .ver-proyectos {

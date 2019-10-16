@@ -13,6 +13,17 @@ function esconderPortafolio() {
     arrowButtons.forEach(button => {
       button.classList.remove("arrow-button--show");
     });
+
+    let portafolioNombre = portafolio.querySelector(".portafolio-nombre--hide");
+    portafolioNombre.classList.remove("portafolio-nombre--hide");
+
+    let proyectoDetalles = portafolio.querySelector(".proyecto-detalles--show");
+    proyectoDetalles.classList.remove("proyecto-detalles--show");
+
+    let proyectoLink = portafolio.querySelectorAll(".proyecto-link--show");
+    proyectoLink.forEach(link => {
+      link.classList.remove("proyecto-link--show");
+    });
   } catch (error) {}
 }
 
@@ -33,18 +44,16 @@ portafolios.forEach(portafolio => {
     arrowButtons.forEach(button => {
       button.classList.add("arrow-button--show");
     });
-  });
 
-  portafolio.addEventListener("blur", () => {
-    let proyectos = portafolio.querySelector(".proyectos");
-    proyectos.classList.remove("proyectos--show");
+    let portafolioNombre = portafolio.querySelector(".portafolio-nombre");
+    portafolioNombre.classList.add("portafolio-nombre--hide");
 
-    let verProyectos = portafolio.querySelector(".ver-proyectos");
-    verProyectos.classList.remove("ver-proyectos--hide");
+    let proyectoDetalles = portafolio.querySelector(".proyecto-detalles");
+    proyectoDetalles.classList.add("proyecto-detalles--show");
 
-    let arrowButtons = portafolio.querySelectorAll(".arrow-button");
-    arrowButtons.forEach(button => {
-      button.classList.remove("arrow-button--show");
+    let proyectoLink = portafolio.querySelectorAll(".proyecto-link");
+    proyectoLink.forEach(link => {
+      link.classList.add("proyecto-link--show");
     });
   });
 });
