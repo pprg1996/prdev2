@@ -516,3 +516,48 @@ header .container {
   bottom: -12px;
   right: -90px;
 }
+
+/* Footer ------------------------------------------------------------ */
+
+footer {
+  background-color: #222222;
+  padding: 17px 0;
+}
+
+.footer-content {
+  position: relative;
+}
+
+.creditos {
+  font-weight: 300;
+  font-size: 12px;
+  letter-spacing: 0.16em;
+  color: #929292;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.footer-logo {
+  max-width: 34px;
+  margin: auto;
+}
+
+.footer-social {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  max-height: 36px;
+}
+
+.footer-social-link {
+  display: inline-block;
+  width: 36px;
+  padding: 8px;
+}
+
+.footer-social-link:not(:last-child) {
+  margin-right: 8px;
+}
