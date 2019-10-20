@@ -466,9 +466,19 @@ header .container {
   position: relative;
 }
 
+.contacto-card--phone {
+  margin-right: 120px;
+  margin-bottom: 80px;
+}
+
+.contacto-card--email {
+  margin-left: 120px;
+}
+
 .contacto-dato-container {
+  width: 245px;
   background-color: #222222;
-  padding: 10px 42px 10px 65px;
+  padding: 8px 0;
   border-radius: 10px;
   border: 2px solid #929292;
 }
@@ -479,13 +489,29 @@ header .container {
   color: #929292;
 }
 
+.contacto-dato--phone {
+  margin-left: 65px;
+}
+
+.contacto-dato--email {
+  margin-left: 22px;
+}
+
 .contacto-icon-container {
-  width: 125px;
+  max-width: 125px;
   background-color: #222222;
   padding: 30px;
   border-radius: 100%;
   border: 2px solid #929292;
   position: absolute;
+}
+
+.contacto-icon-container--phone {
   top: -12px;
   left: -90px;
+}
+
+.contacto-icon-container--email {
+  bottom: -12px;
+  right: -90px;
 }
