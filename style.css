@@ -64,7 +64,7 @@ header .container {
 
 #hero {
   min-height: 120vh;
-  background-color: #00000099;
+  /* background-color: #00000099; */
   display: flex;
   align-items: center;
 }
@@ -86,6 +86,7 @@ header .container {
   font-weight: 600;
   letter-spacing: 3px;
   text-transform: uppercase;
+  background-color: #00000096;
 }
 
 .social-links {
