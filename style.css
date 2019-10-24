@@ -642,3 +642,33 @@ footer {
   }
 }
 
+@media (max-width: 800px) {
+  .nav-links {
+    display: none;
+  }
+
+  .menu-button {
+    display: initial;
+  }
+
+  .social-links {
+    display: none;
+  }
+
+  .top-info-header {
+    font-size: 28px;
+  }
+
+  .footer-content {
+    justify-content: space-between;
+  }
+
+  .creditos {
+    position: static;
+    transform: none;
+  }
+
+  .footer-social {
+    display: none;
+  }
+}
