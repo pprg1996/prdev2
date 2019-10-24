@@ -60,6 +60,54 @@ header .container {
   opacity: 1;
 }
 
+.menu {
+  position: absolute;
+  top: 0;
+  padding: 20px 20px 10px 20px;
+  border-radius: 5px 0 0 5px;
+  right: -300px;
+  transition: all 1s ease-in-out;
+  background-color: #cc3333;
+}
+
+.menu--show {
+  right: 0;
+}
+
+.menu-button {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  width: 40px;
+  margin-left: auto;
+  display: none;
+}
+
+.menu-nav-links {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.menu-nav-link {
+  text-align: center;
+}
+
+.menu-nav-link:not(:last-child) {
+  margin: 0 0 15px 0;
+}
+
+.menu-social-link {
+  width: 36px;
+  padding: 8px;
+  display: inline-block;
+}
+
+.menu-social-link:not(:last-child) {
+  margin-right: 8px;
+}
+
 /* Hero Area ------------------------------------------------------- */
 
 #hero {

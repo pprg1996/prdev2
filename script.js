@@ -1,5 +1,5 @@
 // TODO
-// - Remover try catch. Asegurar que hayan nulls ni undefineds
+// - Remover try catch. Asegurar que no hayan nulls ni undefineds
 
 function esconderPortafolio() {
   try {
@@ -61,6 +61,7 @@ portafolios.forEach(portafolio => {
 // Esconder portafolios
 document.addEventListener("click", e => {
   if (!e.target.closest(".portafolio")) esconderPortafolio();
+  if (!e.target.closest(".menu")) document.querySelector(".menu").classList.remove("menu--show");
 });
 
 // Scrollear imagenes de los portafolios
@@ -75,4 +76,14 @@ arrowButtons.forEach(button => {
 
     proyectos.scrollBy(scrollX, 0);
   });
+});
+
+// Mostrar menu
+let menu = document.querySelector(".menu");
+let menuButton = document.querySelector(".menu-button");
+
+menuButton.addEventListener("click", e => {
+  setTimeout(() => {
+    menu.classList.add("menu--show");
+  }, 10);
 });
