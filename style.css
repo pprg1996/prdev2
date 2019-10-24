@@ -585,3 +585,60 @@ footer {
   }
 }
 
+@media (max-width: 1000px) {
+  .hero-message {
+    font-size: 2rem;
+    max-width: 500px;
+  }
+
+  .servicio-top-info {
+    margin-bottom: 80px;
+    justify-content: space-evenly;
+  }
+
+  .top-info-copy {
+    width: auto;
+  }
+
+  .top-info-header {
+    margin-bottom: 30px;
+  }
+
+  .top-info-txt {
+    display: none;
+  }
+
+  .top-info-icon-container {
+    max-width: 30%;
+  }
+
+  .card {
+    width: 280px;
+    padding: 30px 0;
+    justify-content: center;
+  }
+
+  .card-title {
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+
+  .card-title::after {
+    display: none;
+  }
+
+  .card-description {
+    display: none;
+  }
+
+  .wide-card {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .card-icon-header-container {
+    margin: 0;
+    position: static;
+  }
+}
+
