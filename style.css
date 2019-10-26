@@ -817,3 +817,102 @@ footer {
     font-size: 10px;
   }
 }
+
+@media (max-width: 500px) {
+  .btn {
+    font-size: 7px;
+  }
+
+  .section-header {
+    font-size: 25px;
+  }
+
+  .section-header::before {
+    height: 45px;
+  }
+
+  .top-info-header {
+    margin-bottom: 15px;
+  }
+
+  .top-info-icon-container {
+    max-width: 15%;
+  }
+
+  .card {
+    width: 250px;
+    padding: 25px 0;
+  }
+
+  .card-icon-container {
+    height: 50px;
+    margin-bottom: 27px;
+  }
+
+  .card-icon-header-container .card-icon-container {
+    height: 50px;
+  }
+
+  .card-title {
+    font-size: 12px;
+  }
+
+  .portafolio-nombre {
+    text-align: center;
+    margin: 0 12px;
+    font-size: 12px;
+  }
+
+  .ver-proyectos {
+    top: 0;
+    bottom: auto;
+    border-radius: 0 10px 0 10px;
+  }
+
+  .arrow-button {
+    width: 30px;
+  }
+
+  .arrow-button--right {
+    right: 5px;
+  }
+
+  .arrow-button--left {
+    left: 5px;
+  }
+
+  .contacto-dato-container {
+    width: 230px;
+  }
+
+  .contacto-dato--email {
+    margin-left: 18px;
+  }
+
+  .contacto-dato--phone {
+    margin-left: 82px;
+  }
+
+  .contacto-icon-container {
+    max-width: 70px;
+    padding: 17px;
+  }
+
+  .contacto-icon-container--phone {
+    top: -5px;
+    left: -10px;
+  }
+
+  .contacto-icon-container--email {
+    bottom: -5px;
+    right: -10px;
+  }
+
+  .contacto-card--phone {
+    margin-right: 0px;
+  }
+
+  .contacto-card--email {
+    margin-left: 0px;
+  }
+}
