@@ -203,6 +203,7 @@ header .container {
   font-weight: 500;
   position: relative;
   margin-bottom: 75px;
+  text-align: center;
 }
 
 .top-info-header::after {
