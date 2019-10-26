@@ -720,3 +720,95 @@ footer {
     display: none;
   }
 }
+
+@media (max-width: 700px) {
+  .hero-message {
+    font-size: 1.5rem;
+    max-width: 400px;
+  }
+
+  .btn {
+    font-size: 9px;
+    padding: 15px 50px 15px 30px;
+  }
+
+  #servicios {
+    padding: 50px 0;
+  }
+
+  .section-header {
+    font-size: 30px;
+  }
+
+  .section-header::before {
+    height: 55px;
+  }
+
+  .top-info-header {
+    font-size: 20px;
+  }
+
+  .top-info-header::after {
+    height: 5px;
+    top: calc(100% + 10px);
+  }
+
+  .portafolio {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  #contacto {
+    padding: 50px 0;
+  }
+
+  .contacto-dato {
+    font-size: 12px;
+  }
+
+  .contacto-dato-container {
+    padding: 5px 0;
+    width: 220px;
+  }
+
+  .contacto-dato--email {
+    margin-left: 29px;
+  }
+
+  .contacto-icon-container {
+    max-width: 90px;
+    padding: 23px;
+  }
+
+  .contacto-icon-container--phone {
+    top: -10px;
+    left: -40px;
+  }
+
+  .contacto-icon-container--email {
+    bottom: -10px;
+    right: -40px;
+  }
+
+  .contacto-card--phone {
+    margin-right: 95px;
+    margin-bottom: 55px;
+  }
+
+  .contacto-card--email {
+    margin-left: 95px;
+    margin-bottom: 55px;
+  }
+
+  footer {
+    padding: 10px 0;
+  }
+
+  .footer-logo {
+    max-width: 20px;
+  }
+
+  .creditos {
+    font-size: 10px;
+  }
+}
