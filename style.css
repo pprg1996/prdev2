@@ -738,6 +738,7 @@ footer {
 
   .section-header {
     font-size: 30px;
+    margin-bottom: 60px;
   }
 
   .section-header::before {
@@ -751,6 +752,10 @@ footer {
   .top-info-header::after {
     height: 5px;
     top: calc(100% + 10px);
+  }
+
+  #portafolio {
+    padding: 50px 0;
   }
 
   .portafolio {
