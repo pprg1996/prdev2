@@ -3,9 +3,14 @@
   margin: 0;
 }
 
+html,
 body {
   font-family: "Montserrat";
   overflow-x: hidden;
+}
+
+body {
+  position: relative;
 }
 
 img {
